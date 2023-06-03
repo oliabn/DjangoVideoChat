@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Channels</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <!-- Username input -->
+    <label for="username-input">Username</h3>
+    <div>
+        <input id="username-input" type="text">
+        <button id="btn-join">Join to Room</button>
+    </div>
+    
+    <div class="main-grid-container">
+
+         <!-- Video and chat container -->
+        <div id="video-container">
+             <!-- Video container -->
+            <div>
+                <video id="local-video" style="float: left;" autoplay playsinline></video>
+                <button id="btn-toggle-audio">Mute</button>
+                <button id="btn-toggle-video">Video off</button>
+            </div>
+             <!-- Chat container -->
+            <div id="chat">
+                <h3>Chat</h3>
+                <div>
+                    <ul id=" message-list"></ul>
+                </div>
+
+                <div>
+                    <input id="new-msg" type="text">
+                    <button id="btn-send-msg">Send</button>
+                    <button id="btn-share-screen">Share screen</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

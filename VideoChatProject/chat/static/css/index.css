@@ -1,0 +1,14 @@
+.video-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(20, 20, 20);
+}
+
+.main-grid-container {
+    display: grid;
+    grid-template-columns: 60% 20%;
+}
+
+video {
+    background-color: rgb(20, 20, 20);
+}
