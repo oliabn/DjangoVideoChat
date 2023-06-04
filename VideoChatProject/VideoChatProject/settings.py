@@ -75,6 +75,22 @@ TEMPLATES = [
 WSGI_APPLICATION = 'VideoChatProject.wsgi.application'
 ASGI_APPLICATION = 'VideoChatProject.asgi.application'
 
+# Without Redis
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer"
+    }
+}
+
+# With Redis
+# "default": {
+#         "BACKEND": "asgi_redis.RedisChannelLayer",
+#         "CONFIG": {
+#             "hosts": [(redis_host, 6379)],
+#         },
+#     },
+# }
+
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
