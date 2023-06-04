@@ -28,12 +28,14 @@
              <!-- Chat container -->
             <div id="chat">
                 <h3>Chat</h3>
-                <div>
+                <div id="messages">
                     <ul id=" message-list"></ul>
                 </div>
 
                 <div>
-                    <input id="new-msg" type="text">
+                    <!-- new msg input -->
+                    <input id="msg" type="text">
+                    <!-- send msg button -->
                     <button id="btn-send-msg">Send</button>
                     <button id="btn-share-screen">Share screen</button>
                 </div>
@@ -41,6 +43,10 @@
         </div>
 
     </div>
+
+    <script src="{% static 'js/index.js' %}">
+
+    </script>
 
 </body>
 </html>
